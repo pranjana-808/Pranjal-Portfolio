@@ -1,0 +1,638 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Reset styles */
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-content: center:
+  justify-content: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  }
+
+/* Overall body and header */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111; /* Dark background for the navbar */
+  padding: 10px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: green; /* Neon purple */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition : 0.5s ease-and-out;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #00ffff; 
+  border: 1px solid #00ffff;
+  padding: 2vh 3vh;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: red 0.7s ease-and-out;
+  animation: border-glow 1s infinite alternate; 
+}
+
+@kayframe border-glow{
+    0% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+    100% { text-shadow: 0 0 10px #0ff, 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
+}
+
+.nav-links a:hover {
+  color: aqua; /* Neon purple on hover */
+  text-decoration: underline;
+  transform: translateY(-3px);
+  text-shadow: 
+    0 3vh 5px  aqua, 
+    0 0 10px aqua, 
+    0 0 20px aqua, 
+    0 0 40px aqua;
+}
+
+/* Optional: Make the logo glow for a neon effect */
+.navbar .logo {
+  color: white;
+  text-shadow: 0px 2px 5px white, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue;
+}
+
+.navbar .logo:hover{
+  color: aqua; /* Neon purple on hover */
+  text-shadow: 
+    0 0 5px  aqua, 
+    0 0 10px aqua, 
+    0 0 20px aqua, 
+    0 0 40px aqua;
+}
+
+.group{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  wrap-column-template: repeat(2,1) col;
+  text-align: center;
+
+}
+
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 50px;
+}
+
+/* Styling for the Study section */
+#study {
+    background: linear-gradient(135deg, #111, #0f0f0f);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 30px rgba(0, 255, 255, 0.4);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Neon glow effect on the title */
+#study h2 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    font-weight: bold;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+/* Neon Flicker animation */
+@keyframes neon-flicker {
+    0% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+    100% { text-shadow: 0 0 10px #0ff, 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff; }
+}
+
+/* Styling for each education item */
+.education-item {
+    background-color: #222;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.education-item h3 {
+    font-size: 24px;
+    color: orange;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.education-item p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Glowing effect on the strong tag */
+.education-item strong {
+    color: white;
+    text-shadow: 0 0 10px #0ff00ff, 0 0 15px #0ff;
+}
+
+/* Optional background elements (neon circles for extra flair) */
+#study:before, #study:after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(0, 255, 255, 0.2);
+    animation: glowing 5s infinite ease-in-out;
+}
+
+#study:before {
+    top: 50px;
+    left: -100px;
+}
+
+#study:after {
+    bottom: 50px;
+    right: -100px;
+}
+
+/* Glowing effect for background circles */
+@keyframes glowing {
+    0% { transform: scale(0.8); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 0.4; }
+    100% { transform: scale(0.8); opacity: 0.8; }
+}
+
+
+
+#about , #skill{
+  width: 50%;
+  letter-spacing: 2px;
+}
+
+
+.top{
+  position: fixed;
+  bottom: 4vh;
+  right: 3vh;
+  font-size: 5vh;
+  border-radius : 50px;
+
+}
+
+
+/* Neon Text Effect */
+.neon-text {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 
+    0 0 5px #ff4f00, 
+    0 0 10px #ff4f00, 
+    0 0 20px #ff4f00, 
+    0 0 40px #ff4f00;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+#services{
+  width: 100%;
+  height: 68vh;
+  display: flex;
+  flex-direction: row;
+  wrap-column-template: repeat(2,1);
+  justify-content: space-between;
+  align-content: space-around;
+
+}
+
+.box{
+   margin: 10vh 0 0 0 ;
+   border-top-right-radius: 20%;
+   border-top-left-radius: 20%;
+   border-top: 1px solid yellow;
+   border-bottom: 1px solid orange;
+   border-left: 1px dashed purple;
+   border-right: 1px dashed purple;
+   width: 23%;
+   height: 40vh;
+   box-shadow: 2px 2px 6px rgba(0, 0.4, 0, 9);
+   letter-spacing : 3px;
+   animation: neon-flicker 1.5s infinite alternate;
+}
+
+.box h3{
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  color : orange;
+  text-shadow:  0 0 40px #ff4f00;
+}
+
+.box p{
+  color : creamwhite;
+  font-size: 2.5vh;
+}
+
+.modern-button {
+      background-color: black; 
+      color: aqua;              /* White text */
+      font-size: 16px;
+      margin: 3vh 0vh;
+      padding: 8px 15px;        /* Top/Bottom, Left/Right padding */
+      border: none;
+      border-radius: 25px;       /* Rounded corners */
+      cursor: pointer;
+      transition: all 0.1s ease; /* Smooth transition for hover effects */
+      text-shadow:  0 0 40px #ff4f00;
+    }
+
+    /* Hover effect */
+.modern-button:hover {
+   background-color: black; /* Darker green on hover */
+   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); /* Slightly more shadow on hover */
+   transform: translateY(-3px); /* Lift effect */
+   text-shadow: 
+    0 0 5px  aqua, 
+    0 0 10px aqua, 
+    0 0 20px aqua, 
+    0 0 40px aqua;
+ }
+
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 
+      0 0 5px #ff4f00, 
+      0 0 10px #ff4f00, 
+      0 0 20px #ff4f00, 
+      0 0 40px #ff4f00;
+  }
+  50% {
+    text-shadow: 
+      0 0 15px #ff4f00, 
+      0 0 30px #ff4f00, 
+      0 0 60px #ff4f00, 
+      0 0 90px #ff4f00;
+  }
+  100% {
+    text-shadow: 
+      0 0 5px #ff4f00, 
+      0 0 10px #ff4f00, 
+      0 0 20px #ff4f00, 
+      0 0 40px #ff4f00;
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+
+
+.neon-heading {
+  font-size: 2em;
+  color: #ff4f00;
+  text-shadow: 
+    0 0 10px #ff4f00, 
+    0 0 20px #ff4f00, 
+    0 0 30px #ff4f00;
+  margin-bottom: 20px;
+}
+
+.neon-section {
+  align-content: center; 
+  justify-content: center;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.neon-section img {
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px rgba(0, 255, 255, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-shadow: 0 0 5px #ff4f00, 0 0 10px #ff4f00;
+}
+
+#contact{
+  width: 50%;
+  margin: 3vh 2vh;
+}
+
+    .contact-form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      width: 300px;
+    }
+    .contact-form h2 {
+      text-align: center;
+      color: #0fdbff;
+      margin-bottom: 20px;
+    }
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #0fdbff;
+      border-radius: 5px;
+      background: transparent;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+    .contact-form input[type="radio"] {
+      margin-right: 5px;
+    }
+    .contact-form textarea {
+      height: 100px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background: #0fdbff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: #06a9c7;
+    }
+
+    .comment-section {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 600px;
+    }
+    .comment-section h2 {
+      text-align: center;
+      color: #0fdbff;
+      margin-bottom: 20px;
+    }
+    .comment-section label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .comment-section input[type="text"],
+    .comment-section textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #0fdbff;
+      border-radius: 5px;
+      background: transparent;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+    .comment-section input[type="number"] {
+      width: 100px;
+      padding: 10px;
+      border: 2px solid #0fdbff;
+      border-radius: 5px;
+      background: transparent;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      margin-top: 5px;
+    }
+    .comment-section button {
+      width: 100%;
+      padding: 10px;
+      background: #0fdbff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+    .comment-section button:hover {
+      background: #06a9c7;
+    }
+    .comments-display {
+      margin-top: 30px;
+      border-top: 2px solid #333;
+      padding-top: 20px;
+    }
+    .comments-display h3 {
+      color: #0fdbff;
+    }
+    .comment-item {
+      background: #292929;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .comment-item p {
+      margin: 5px 0;
+    }
+
+    .comment-section button {
+      width: 100%;
+      padding: 10px;
+      background: #0fdbff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+    .comment-section button:hover {
+      background: #06a9c7;
+    }
+
+    .show-more-btn {
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .show-more-btn button {
+      padding: 10px 20px;
+      background: #0fdbff;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .show-more-btn button:hover {
+      background: #06a9c7;
+    }
+
+
+.footer {
+  margin: 10px 0 0 0 ;
+  bottom: 10px;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+/* General Styling for Social Links */
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Instagram Neon Effect */
+.social-links .instagram {
+  border: 2px solid #e1306c;
+}
+
+.social-links .instagram:hover {
+  color: #e1306c;
+  box-shadow: 0 0 15px #e1306c, 0 0 30px #e1306c;
+  transform: scale(1.1);
+}
+
+/* YouTube Neon Effect */
+.social-links .youtube {
+  border: 2px solid #ff0000;
+}
+
+.social-links .youtube:hover {
+  color: #ff0000;
+  box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+  transform: scale(1.1);
+}
+
+/* TikTok Neon Effect */
+.social-links .tiktok {
+  border: 2px solid #69c9d0;
+}
+
+.social-links .tiktok:hover {
+  color: #69c9d0;
+  box-shadow: 0 0 15px #69c9d0, 0 0 30px #69c9d0;
+  transform: scale(1.1);
+}
+
+/* Facebook Neon Effect */
+.social-links .facebook {
+  border: 2px solid #1877f2;
+}
+
+.social-links .facebook:hover {
+  color: #1877f2;
+  box-shadow: 0 0 15px #1877f2, 0 0 30px #1877f2;
+  transform: scale(1.1);
+}
+
